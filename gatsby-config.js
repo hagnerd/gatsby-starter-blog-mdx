@@ -45,7 +45,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-copy-linked-files`,
           },
-          
+
           {
             resolve: `gatsby-remark-smartypants`,
           },
@@ -83,11 +83,12 @@ module.exports = {
                   data: edge.node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + edge.node.fields.slug,
                   guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  custom_elements: [{ "content:encoded": edge.node.code.boy }],
+                  custom_elements: [{ 'content:encoded': edge.node.code.boy }],
                 })
               })
             },
             query: `
+            {
               allMdx(
                 limit: 1000,
                 sort: { order: DESC, fields: [frontmatter___date] },
@@ -106,12 +107,13 @@ module.exports = {
                   }
                 }
               }
+            }
             `,
             output: '/rss.xml',
             title: 'Gatsby RSS feed',
           },
-        ]
-      }
+        ],
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,

@@ -25,8 +25,7 @@ this blog possible!
 
     ```sh
     # create a new Gatsby site using the blog starter
-    npx gatsby new my-blog-starter
-    https://github.com/hagnerd/gatsby-starter-blog-mdx
+    npx gatsby new my-blog-starter https://github.com/hagnerd/gatsby-starter-blog-mdx
     ```
 
 1.  **Start developing.**

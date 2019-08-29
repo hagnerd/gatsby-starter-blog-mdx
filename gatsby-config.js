@@ -100,9 +100,7 @@ module.exports = {
               ) {
                 edges {
                   node {
-                    code {
-                      body
-                    }
+                    body
                     fields { slug }
                     frontmatter {
                       title

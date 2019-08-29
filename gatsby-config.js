@@ -100,12 +100,12 @@ module.exports = {
               ) {
                 edges {
                   node {
-                    body
                     fields { slug }
                     frontmatter {
                       title
                       date
                     }
+                    body
                   }
                 }
               }
